@@ -77,7 +77,7 @@
         "DEV":{
             "description": "User id of the developer who manages the bot and repo",
             "required": true,
-            "value": 5909582134
+            "value": 1344569458
         },
         "WITHIN":{
             "description": "Within how many seconds the bot will consider the message as spam",
