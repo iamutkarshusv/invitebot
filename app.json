@@ -1,0 +1,109 @@
+{
+    "name": "Member Adder",
+    "description": "A telegram bot to find the files on the channel or group",
+    "repository": "https://github.com/Gojo-Bots/Kanao_Tsuyuri",
+    
+    "env": {
+        "BOT_TOKEN": {
+            "description": "telegram bot token here you can get it from https://t.me/BotFather",
+            "required": true,
+            "value": "6174813938:AAGTp9RcHoiGR30U9Qnkh7HbQyilNF1Go1M"
+        },
+        "API_ID": {
+            "description": "telegram api id here you can get the value from telegram.org",
+            "required": true,
+            "value": "23212597"
+        },
+        "API_HASH": {
+            "description": "telegram api hash from telegram.org",
+            "required": true,
+            "value": "33eb027e00b1d53a2f9683ebc5443aad"
+        },
+        "OWNER_ID": {
+            "description": "Owner's id.",
+            "required" : true,
+            "value" : "5909582134"
+        },
+        "SUDO": {
+            "description": "Sudoers id. Have same powers as owner. Seprate multiple value with space. Don't leave it blank enter your id if you don't find any sudo",
+            "required" : true,
+            "value" : ""
+        },
+        "DB_URI": {
+            "description": "Your MongoDB connection string.",
+            "required": true,
+            "value": "mongodb+srv://iamutkarshusv:invitekaro@cluster0.es0ngez.mongodb.net/?retryWrites=true&w=majority"
+        },
+        "DB_NAME": {
+            "description": "Your MongoDB database name.",
+            "required": true,
+            "value": "invite bot"
+        },
+        "CATEGORY": {
+            "description": "Name of initial category your want to divide the rewards in. Seprate them by space. If you have a value which have space between them seprate them using _",
+            "required": true,
+            "value": "video zip"
+        },
+        "AMOUNT": {
+            "description": "Amount which should be given to the user when someonejoins via their link",
+            "required": false,
+            "value": "50"
+        },
+        "CHAT_ID": {
+            "description": "Id of the chat in which you want to add member. Support only one at this time. Pass only one chat id",
+            "required": true,
+            "value": "-1001806305777"
+        },
+        "PREMIUM_CHANNEL": {
+            "description": "Id of the premium channel. Pass 0 if you don't want to set it",
+            "required": true,
+            "value": "0"
+        },
+        "COIN_NAME": {
+            "description": "Your custom coin name without emoji",
+            "required": false,
+            "value": "Lord Coins "
+        },
+        "COIN_EMOJI": {
+            "description": "Your custom coin emoji",
+            "required": false,
+            "value": "🎫"
+        },
+        "NUMBER_MESSAGE":{
+            "description": "Number of message after which the user will get some coin",
+            "required": true,
+            "value": 20
+        },
+        "DEV":{
+            "description": "User id of the developer who manages the bot and repo",
+            "required": true,
+            "value": 5909582134
+        },
+        "WITHIN":{
+            "description": "Within how many seconds the bot will consider the message as spam",
+            "required": true,
+            "value":50
+        },
+        "LIMIT":{
+            "description": "Number of message after which next message will considered as spam",
+            "required": true,
+            "value":100
+        },
+        "TIME":{
+            "description": "For time the user will not get the increment in number message due to spam.Use m for minutes, h for hours and d for days. Don't give space between time and unit give it in same format given below",
+            "required": true,
+            "value": "1h"
+        },
+        "COIN_MESSAGE":{
+            "description": "Coin given to user when he/she send the required number of message",
+            "required": true,
+            "value": 10 
+        },
+        "PREMIUM_COST": {
+            "description": "Cost of premium channel's link. Default to 50",
+            "required": false,
+            "value": "900000000"
+        }
+        
+    }
+}
